@@ -5,17 +5,17 @@
 # else:
 #     print("not palindrome")
     
-s = int(input("Enter a string: "))
+# s = input("Enter a string: ")
 
-reverse = ""
+# reverse = ""
 
-for i in s:
-    reverse = i+reverse
+# for i in s:
+#     reverse = i+reverse
 
-if s == reverse:
-    print("Palindrome")
-else:
-    print("Not a palindrome")
+# if s == reverse:
+#     print("Palindrome")
+# else:
+#     print("Not a palindrome")
 
 # print("numbers")
 # for i in range(1,101):
@@ -54,3 +54,8 @@ else:
 #         letter=i
 # print("letter =",letter)
 # print("count=",count)
+
+list=[1,2,3,4,6]
+for i in range(len(list)):
+    if i%2==0:
+        print(list[i])
