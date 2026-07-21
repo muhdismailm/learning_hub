@@ -6,13 +6,12 @@
 #         if i==j:
 #             list3.append(i)
 
-# print(list3)
-list1=[2,6,4,5,5,5,7,8,2]
-count1=1
-for i in list1:
-    if count1 < list1.count(i):
-        list1.remove(i)
-print(list1)
+# # print(list3)
+# list1=[2,6,4,5,5,5,7,8,2]
+# count1=1
+# for i in list1:
+#     if count1 < list1.count(i):
+#         print(list1[i])
     
         
     
@@ -32,3 +31,13 @@ print(list1)
 #         odd+=1
 # print("number of evens=",even)
 # print("number of odd =",odd)
+
+
+
+# list1=["apple","apple","orange","orange","orange","kiwi"]
+# count=1
+# for i in list1:
+#     if list1.count(i)>count:
+#         print(i)
+#         count=1
+        
