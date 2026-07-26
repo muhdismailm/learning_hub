@@ -58,19 +58,19 @@
 #         longest=max(longest,len(seen))
 # print(longest)
 # print(seen)
-x=132
-rev=0
-if x>((2**31)-1) | x<-2**31:
-    print(0)
-else:
-    while(x>0):
-        digit=x%10
-        rev=rev*10+digit
-        x//=10  
-    if x<0:
-        print(rev)
-    else:
-        print(-rev)
+# x=132
+# rev=0
+# if x>((2**31)-1) | x<-2**31:
+#     print(0)
+# else:
+#     while(x>0):
+#         digit=x%10
+#         rev=rev*10+digit
+#         x//=10  
+#     if x<0:
+#         print(rev)
+#     else:
+#         print(-rev)
              
 
 # x=56
@@ -80,3 +80,9 @@ else:
 #     rev=rev*10+mod
 #     x//=10
 # print(-rev)
+
+s=" -042"
+for i in s:
+    if s[0]==" ":
+        continue 
+print(s)

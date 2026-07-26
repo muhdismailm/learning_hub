@@ -48,10 +48,55 @@
 # print(set1)
         
         
-s= "my program language"
-dict1={}
-for i in s:
-    dict1.keys()
+# n=5
+# dict1={x:x**2 for x in range(n)}
+
+# print(dict1)
+
+# n=int(input("enter a range"))
+# dict1={}
+# for i in range(1,n+1):
+#     dict1[i]=i**2
+
+# print(dict1)
+
+
+# words = ['apple', 'ant', 'banana', 'ball', 'cat', 'car']
+
+# d={}
+# for word in words:
+#     first=word[0]
     
+#     if first in d:
+#         d[first].append(word)
+#     else:
+#         d[first]=[word]
+        
+# print(d)
+
+# l1=["suzuki","kia","ford","toyota"]
+
+# l2=["alto","seltos","raptor","innova"]
+
+# d={}
+
+# for i in range(len(l1)):
+#     d[l1[i]]=l2[i]
     
-print(dict1)
+# print(d)
+
+
+d1={'a':100,'b':200,'c':500}
+d2 = {'a':300,'b':200,'d':400}
+d3={}
+for x in d1:
+    if x in d2:
+        sum=d1[x]+d2[x]
+        d3[x]=sum
+    else:
+        d3[x]=d1[x]
+for y in d2:
+    if y not in d1:
+        d3[y]=d2[y]
+        
+print(d3)
