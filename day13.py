@@ -98,9 +98,3 @@
 #         li.remove(i)
 #         li.append(0)
 # print(li)
-
-tu=[(10, 20, 40), (40, 50, 60), (70, 80, 90)]
-for i in range(0,len(tu)):
-    li=list(tu[i][i])
-    
-print(li)

@@ -56,20 +56,20 @@
 #         l2.append(i)
 # print(l2)
             
-# li=[1,2,3,4,5,6,7,8,9]
-# pair=[]
+li=[1,2,3,4,5,6,7,8,9]
+pair=[]
 
-# for i in range(len(li)):
-#     for j in range(len(li)):
-#         for k in range(len(li)):
-#             if (li[i])**2+(li[j])**2==li[k]**2:
-#                 pair.append((li[i],li[j],li[k]))
-# print(pair)
+for i in range(len(li)):
+    for j in range(i,len(li)):
+        for k in range(len(li)):
+            if (li[i])**2+(li[j])**2==li[k]**2:
+                pair.append((li[i],li[j],li[k]))
+print(pair)
 
 
 # ------function----
-d={"prime":[]}
-li=[1,2,3,11,1234,23]
+d={}
+li=[1,2,3,11,6,9,1234,23,28,153]
 
 def check_prime(num):
     is_prime=True
@@ -88,9 +88,45 @@ def check_even(num):
         d.setdefault("even",[]).append(num)
     else:
         d.setdefault("odd",[]).append(num)
+
+def check_perfect(num):
+    sum=0
+    for i in range(1,num):
+        if num%i==0:
+            sum=sum+i
+    if sum==num:
+        d.setdefault("perfect",[]).append(num)
+            
+def check_armstrong(num):
+    sum=0
+    number=num
+    l=len(str(num))
+    
+    while(num>0):
+        digit=num%10
+        sum=sum+digit**l
+        num=num//10
+    if sum==number:
+        d.setdefault("armstrong",[]).append(number)
+        
+def check_neon(num):
+    original=num
+    sum=0
+    product=num**2
+    while product>0:
+        digit=product%10
+        sum=sum+digit
+        product//=10
+    if sum==original:
+        d.setdefault("Neon",[]).append(original)
+        
+    
 for i in li:
     check_even(i)
-    check_prime(i)       
+    check_prime(i) 
+    check_perfect(i)  
+    check_armstrong(i)
+    check_neon(i)       
 print(d)
     
     
