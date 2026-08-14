@@ -20,3 +20,4 @@ def digit(left,right):
 left=int(input("enter left limit"))
 right=int(input("enter right limit"))
 digit(left,right)
+
